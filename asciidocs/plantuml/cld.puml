@@ -1,0 +1,32 @@
+@startuml
+
+class SportEquipment  {
+  String name
+  String brand
+  void methods()
+}
+
+class Employee {
+   int id
+   String name
+   double salary
+}
+
+class Trainingplan {
+   int id
+   String name
+   Date duration
+   String description
+}
+
+class Customer {
+   int id
+   String name
+   Date registeredDate
+}
+
+
+Trainingplan"0...*" -- "1..* "Employee : < create
+Customer"0...*" -- "1..* "Trainingplan :  forfeit
+Trainingplan "0...*" --- "0 ..* "SportEquipment : in using
+@enduml
