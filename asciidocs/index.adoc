@@ -1,0 +1,26 @@
+= Fitness Studio
+firstname lastname
+1.0.0, yyyy-mm-dd: Some notes
+ifndef::imagesdir[:imagesdir: images]
+//:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+ifdef::backend-html5[]
+
+== Beschreibung
+In dem Projekt geht es um eine Verwaltung eines Fitnessstudios.
+Mitglieder können Trainingspläne fordern, welche von Mitarbeitern zu erstellen ist.
+Im Zusammenhang mit Trainingsplan  sind die Geräte zum Benutzen.
+
+== Klassendiagramm
+[plantuml, cld, png, align=left]
+----
+include::plantuml/cld.puml[]
+----
+
+=== Use Case Diagramm
+[plantuml, ucd, png, align=left]
+----
+include::plantuml/ucd.puml[]
+----
