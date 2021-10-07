@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+actor Customer as g
+package Professional {
+  actor Employee as e
+}
+package Gym {
+  usecase "Use Sportequipment" as UC1
+  usecase "trainplan" as UC2
+  usecase "Review" as UC5
+}
+e --> UC5
+g --> UC1
+g --> UC2
+
+@enduml
