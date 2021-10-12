@@ -3,6 +3,7 @@ package at.htl.fitnesstudio.boundary;
 import at.htl.SportEquipmentRepository;
 import at.htl.fitnesstudio.entity.SportEquipment;
 
+import javax.enterprise.context.RequestScoped;
 import javax.json.JsonObject;
 import javax.transaction.Transactional;
 import javax.ws.rs.*;
@@ -10,6 +11,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Path("/resteasy/hello")
+@RequestScoped
 public class SportEquipmentService {
     @GET
     @Produces(MediaType.TEXT_PLAIN)

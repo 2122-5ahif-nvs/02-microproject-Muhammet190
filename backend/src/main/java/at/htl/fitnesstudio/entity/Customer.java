@@ -1,16 +1,22 @@
 package at.htl.fitnesstudio.entity;
 
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
+
+import javax.json.bind.annotation.JsonbProperty;
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@Schema(description = "Customer of my fitnessstudio")
 public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @JsonbProperty("registered_date")
     private Date registeredDate;
+    @Schema(required = true)
     private String name;
 
 

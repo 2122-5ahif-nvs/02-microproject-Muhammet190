@@ -2,10 +2,11 @@ package at.htl;
 
 import at.htl.fitnesstudio.entity.SportEquipment;
 
+import javax.enterprise.context.ApplicationScoped;
 import java.util.LinkedList;
 import java.util.List;
-
-public class SportEquipmentRepository {
+@ApplicationScoped
+public class SportEquipmentRepository  {
 
     private static SportEquipmentRepository instance;
     private List<SportEquipment> equipments;
