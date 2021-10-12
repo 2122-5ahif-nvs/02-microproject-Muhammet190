@@ -1,0 +1,80 @@
+GET http://localhost:8080/resteasy/hello/EquipmentList
+Accept: application/json // Ich akzeptiere json
+
+###
+
+POST http://localhost:8080/resteasy/hello/NewEquipment
+Content-Type: application/json // das was ich schicke ist in json format
+
+{
+  "name": "Leg Curl",
+  "brand": "Techno Gym"
+}
+
+###
+
+DELETE http://localhost:8080/resteasy/hello/Shoulder Press
+Content-Type: application/json
+
+###
+PUT http://localhost:8080/resteasy/hello/Leg Curl
+Content-Type: application/json
+
+{
+  "name": "Leg Curl",
+  "brand": "Gym Shark"
+}
+
+###
+POST http://localhost:8080/employee/NewEmp
+Content-Type: application/json // das was ich schicke ist in json format
+
+{
+  "name": "Patato",
+  "salary": 160
+}
+
+###
+GET http://localhost:8080/employee/GetAll
+
+###
+
+GET localhost:8080/employee/7
+
+###
+
+GET http://localhost:8080/api/employee
+
+### korrekte Anfrage
+
+POST http://localhost:8080/api/employee
+Content-Type: application/json
+
+{
+  "salary": 255,
+  "name": "Bartu"
+}
+
+### korrekte Anfrage
+
+PUT http://localhost:8080/api/employee/4
+Content-Type: application/json
+
+{
+  "salary": 211,
+  "name": "Patz"
+}
+
+### korrekte Anfrage
+
+DELETE http://localhost:8080/api/employee/4
+
+### fehlerhafte Anfrage
+
+PUT http://localhost:8080/api/employee/10
+Content-Type: application/json
+
+{
+  "abbr": 124,
+  "namex": "Felix"
+}

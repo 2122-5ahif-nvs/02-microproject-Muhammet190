@@ -1,0 +1,8 @@
+[plantuml,CLD,png]
+----
+@startuml
+class Dummy {
+String id
+}
+@enduml
+----

@@ -1,0 +1,82 @@
+= Projektantrag
+firstname lastname
+1.1.0, yyyy-mm-dd: Some notes
+ifndef::imagesdir[:imagesdir: images]
+//:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+:toc: left
+
+//Need this blank line after ifdef, don't know why...
+ifdef::backend-html5[]
+
+// https://fontawesome.com/v4.7.0/icons/
+icon:file-text-o[link=https://raw.githubusercontent.com/htl-leonding-college/asciidoctor-docker-template/master/asciidocs/{docname}.adoc] ‏ ‏ ‎
+icon:github-square[link=https://github.com/htl-leonding-college/asciidoctor-docker-template] ‏ ‏ ‎
+icon:home[link=https://htl-leonding.github.io/]
+endif::backend-html5[]
+
+// print the toc here (not at the default position)
+//toc::[]
+
+== Projektbezeichnung
+StayFit
+
+
+== Projekt-Auftraggeber
+Fitnesstudios im Zentralraum Oberösterreich
+
+== Projekthintergrund
+Die neuen Mitglieder im Fitnessstudio tun sich meistens schwer beim Einstieg ins Workout! Sie wissen meistens nicht, welcher Körperteil wie trainiert wird.
+Da Sie aber in meisten Fällen keinen richtigen Trainingsplan verfolgen, geht die Motivation zum Trainiernen verolren!
+Neben dem Training ist die Ernährung genauso wichtig, welche gut geplant und strikt eingehalten werden musss
+
+
+== Sinn und Zweck
+Dieses Projekt hilft den Mitglieder im Fitnessstudio den Einstieg ins Workout!
+Oft wissen die neuen Mitglieder, welchen Trainingsplan Sie verfolgen müssen.
+Daher wird es Ihnen der Einstieg leichter gestaltet durch diese App!
+Durch den richtigen Trainingsplan und Ernährung wird die Motivation des Kunden beibehalten, da das Ziel zum Muskelaufbau schneller erreicht wird !
+
+
+== Funktionen
+* Einsicht auf die Übungen jede Zeit
+* Kalorien werden mitgezählt
+* Ausführung der Übungen werden mit Videos veranschaulicht
+* Körperfett berechnen
+
+== Beteiligte
+
+=== Mitglieder
+
+Schnellen Zugriff auf die Übungen.
+
+=== Fitnessstudioleiter
+Vereinfacht die Arbeit von Personaltrainer.
+
+== Projektziele
+
+* unabhängig sein vom Trainer
+* Zugriff auf die Übungen überall möglich
+* Vermeiden von Verletzungen
+
+== Endergebnis
+Soll helfen die Übungen zu verstehen und richtig auszuführen! Aber auch Verletzungen zu vermeiden.
+Das Ergebnis ist, dass man Spaß im Training hat.
+Durch die vielfältigen Übungen wird es Ihnen nicht langweilig im Training und lernen dabei auch über die Anatomie ihres Körpers!
+Auch durch den Ernährungsplangestalter unserer App, werden Sie ihre Mahlzeiten vor oder nach dem Training genießen!
+
+== Klassendiagramm
+
+[plantuml,cld,png,align=left]
+----
+include::plantuml/cld.puml[]
+----
+
+== Aktivitätsdiagramm
+
+[plantuml,ucd,png,align=left]
+----
+include::plantuml/ucd.puml[]
+----
